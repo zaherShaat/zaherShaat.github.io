@@ -665,3 +665,22 @@ footer p {
 .social-links i {
     font-size: 1.2em;
 }
+
+.project-image {
+    width: 300px;
+    /* or any size you need */
+    /* height: 420px; */
+    background-size: cover;
+    /* Fills box, may crop */
+    /* ensures the image covers the whole area */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    /* smooth hover effect */
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    /* slightly enlarge on hover */
+}
