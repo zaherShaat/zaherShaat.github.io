@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
 :root {
     --primary: #2d3748;
     --secondary: #4a5568;
@@ -756,4 +767,33 @@ footer p {
     width: 100%;
     object-fit: cover;
 
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        /* Adjust based on your header height */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        /* Match your header color */
+
+        /* The Fix for Scrollability */
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Ensure links have enough padding to be clickable */
+    .nav-links a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaher Shaat 🇵🇸 - Software Developer</title>
+    <title>Zaher Shaat - Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -442,18 +442,21 @@
     </footer>
 
     <script>
-        // Simple mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', function () {
+            // This toggles a class called 'active'
+            navLinks.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on a link
+        // Update the CSS to show the menu when 'active' is present
+        // Add this to your CSS file:
+        // .nav-links.active { display: flex !important; }
+
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', function () {
-                if (window.innerWidth <= 768) {
-                    document.querySelector('.nav-links').style.display = 'none';
-                }
+                navLinks.classList.remove('active');
             });
         });
     </script>
