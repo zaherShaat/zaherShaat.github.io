@@ -284,7 +284,7 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1CHyxWxln6fEHtPnZlFu9SHicIavaZQ7Z?usp=drive_link"
-                                <a href="#" target="_blank">View Details</a>
+                                target="_blank">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -445,17 +445,14 @@
         const menuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
 
-        menuBtn.addEventListener('click', function () {
-            // This toggles a class called 'active'
+        // Toggle menu
+        menuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
 
-        // Update the CSS to show the menu when 'active' is present
-        // Add this to your CSS file:
-        // .nav-links.active { display: flex !important; }
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function () {
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').okForEach(link => {
+            link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
