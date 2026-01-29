@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zaher Shaat - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,11 +33,12 @@
                     <a href="#education">Education</a>
                     <a href="#projects">Projects</a>
                     <a href="#blogs">Blogs</a>
-
                 </div>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="mobile-menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
@@ -235,28 +241,28 @@
             </div>
             <div class="education-container">
                 <div class="education-item">
+                    <span class="education-date">Sep 2019 - Sep 2023</span>
                     <h3>Bachelor's Degree in Mobile Apps and Network Development</h3>
                     <p>Al-Aqsa University, Gaza</p>
-                    <p class="education-date">Sep 2019 - Sep 2023</p>
                     <p>4-year program focusing on mobile application development and network systems.</p>
                 </div>
                 <div class="education-item">
+                    <span class="education-date">Nov 2023 - Dec 2023</span>
                     <h3>Clean Code & Clean Architecture</h3>
-                    <p>Udemy</p>
-                    <p class="education-date">Nov 2023 - Dec 2023</p>
-                    <p>Course on writing maintainable code and implementing clean architecture patterns.</p>
+                    <p>Udemy Professional Course</p>
+                    <p>Writing maintainable code and implementing solid architecture patterns.</p>
                 </div>
                 <div class="education-item">
+                    <span class="education-date">Aug 2019 - Jan 2020</span>
                     <h3>Dart & Flutter</h3>
-                    <p>YouTube</p>
-                    <p class="education-date">Aug 2019 - Jan 2020</p>
-                    <p>Self-paced learning of Dart programming language and Flutter framework.</p>
+                    <p>Self-Paced Learning</p>
+                    <p>Mastering Dart programming language and the Flutter framework.</p>
                 </div>
                 <div class="education-item">
+                    <span class="education-date">Dec 2018 - Mar 2019</span>
                     <h3>Java Programming</h3>
-                    <p>YouTube</p>
-                    <p class="education-date">Dec 2018 - Mar 2019</p>
-                    <p>Learned Java fundamentals and object-oriented programming concepts.</p>
+                    <p>Fundamentals of OOP</p>
+                    <p>Learned Java fundamentals and key object-oriented programming concepts.</p>
                 </div>
             </div>
         </div>
@@ -278,9 +284,9 @@
                         <p>A clean code Clean Architecture app following Uncle Bob principles with Bloc state
                             management.</p>
                         <ul class="project-features">
-                            <li>Discover movies and TV shows news</li>
-                            <li>Responsive and stable</li>
-                            <li>Clean Architecture implementation</li>
+                            <li><i class="fas fa-clapperboard"></i> Movies & TV news discovery</li>
+                            <li><i class="fas fa-layer-group"></i> Clean Architecture principles</li>
+                            <li><i class="fas fa-bolt"></i> BLoC state management</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1CHyxWxln6fEHtPnZlFu9SHicIavaZQ7Z?usp=drive_link"
@@ -295,10 +301,9 @@
                         <h3>Notes App</h3>
                         <p>Online note-taking application to save your notes in an organized way.</p>
                         <ul class="project-features">
-                            <li>No data saved locally on phone</li>
-                            <li>Node.js backend</li>
-                            <li>MongoDB database</li>
-                            <li>Clean UI/UX</li>
+                            <li><i class="fas fa-server"></i> Node.js & MongoDB backend</li>
+                            <li><i class="fas fa-shield-halved"></i> Secure cloud storage</li>
+                            <li><i class="fas fa-wand-magic-sparkles"></i> Clean & intuitive UI/UX</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1Dnq2hHANvygMMzqXgeRMvfNYU73g557B?usp=drive_link"
@@ -313,10 +318,9 @@
                         <h3>ShopPOS</h3>
                         <p>Mobile Point of Sale system with local and cloud backup.</p>
                         <ul class="project-features">
-                            <li>Bloc state management</li>
-                            <li>Hive for local data storage</li>
-                            <li>Secondary online backup in Firebase</li>
-                            <li>Temporary UI implementation</li>
+                            <li><i class="fas fa-cash-register"></i> Mobile POS with BLoC</li>
+                            <li><i class="fas fa-database"></i> Hive for local storage</li>
+                            <li><i class="fas fa-cloud-arrow-up"></i> Firebase cloud backup</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1KzXxmBhIZ7M6Ko18nhdoIFbMR-PvrSoz?usp=drive_link"
@@ -331,10 +335,9 @@
                         <h3>Commande Delivery</h3>
                         <p>Restaurant order management system for delivery personnel.</p>
                         <ul class="project-features">
-                            <li>Receive orders from restaurant</li>
-                            <li>Send order status updates</li>
-                            <li>View returns and navigate with drawer</li>
-                            <li>Works online and offline</li>
+                            <li><i class="fas fa-utensils"></i> Restaurant order management</li>
+                            <li><i class="fas fa-truck"></i> Real-time status updates</li>
+                            <li><i class="fas fa-signal"></i> Works online and offline</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1ErL235Me_s1ocMYOKF5sZufjYb2K_4II?usp=drive_link"
@@ -350,9 +353,9 @@
                         <h3>Mobile Podcast UI</h3>
                         <p>Responsive UI project for a podcast application.</p>
                         <ul class="project-features">
-                            <li>Built with Flutter framework</li>
-                            <li>Fully responsive design</li>
-                            <li>Clean and intuitive interface</li>
+                            <li><i class="fas fa-microphone"></i> Premium podcast interface</li>
+                            <li><i class="fas fa-mobile-screen-button"></i> Fully responsive Flutter UI</li>
+                            <li><i class="fas fa-palette"></i> Modern aesthetic design</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1pTmwdju2B-7OGR_y0eHW8EB_0TZxsdVU?usp=drive_link"
@@ -435,26 +438,49 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 05/2025 Zaher Shaat.</p>
+            <p>&copy;2026 Zaher Shaat.</p>
             <p> All rights reserved.</p>
-            <p>Flutter Developer from Gaza, Palestine</p>
+            <p>Flutter&Nodejs Developer</p>
         </div>
     </footer>
 
     <script>
-        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
         const navLinks = document.querySelector('.nav-links');
+        const header = document.querySelector('header');
 
-        // Toggle menu
-        menuBtn.addEventListener('click', () => {
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
 
         // Close menu when a link is clicked
-        document.querySelectorAll('.nav-links a').okForEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                document.body.style.overflow = '';
             });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Close menu on resize if screen becomes large
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     </script>
 </body>
