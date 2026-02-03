@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email to Professor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #eaeaea;
+        }
+
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .university-badge {
+            color: #8b0000;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .subject-line {
+            font-size: 16px;
+            color: #2c3e50;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #8b0000;
+        }
+
+        .salutation {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .applicant-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #8b0000;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .attachment-note {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #2c3e50;
+        }
+
+        .flag {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .highlight {
+            background-color: #fff9e6;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <div class="university-badge">{{university}} University • College of Engineering</div>
+            <div class="subject-line">
+                <strong>Subject:</strong> Inquiry from Prospective CSC Master's Student in Edge Computing - Zaher Shat
+            </div>
+        </div>
+        <p>Sorry fro the previous email, a wrong university name</p>
+        <p class="salutation">Dear Professor {{name}},</p>
+        <p>My name is <strong>Zaher Shaat</strong>, a Palestinian software engineer with a Bachelor's degree in
+            <strong>Networks and Mobile Technology</strong> and <span class="highlight">3 years of professional
+                experience</span> as a full-stack Flutter/Node.js developer. I am writing to express my strong interest
+            in pursuing a Master's degree in Computer Science and Technology under your supervision through the
+            <strong>Chinese Government Scholarship (CSC)</strong> program.
+        </p>
+
+        <p>I have thoroughly reviewed some researches. This aligns closely with my
+            proposed research direction in <em>"Leveraging Edge Computing and Efficient Deep Learning Models for
+                Scalable Mobile & IoT Systems."</em></p>
+
+        <p>My professional projects, including real-time logistics applications and a Pharmacy Management System with
+            local database intelligence, have given me practical insight into distributed system challenges. I am eager
+            to transition from application development to advanced research in edge intelligence at Yanbian University.
+        </p>
+
+        <div class="attachment-note">
+            <strong>📎 Attached please find:</strong>
+            <ul>
+                <li>My detailed Research Study Plan tailored for Yanbian University</li>
+                <li>My Curriculum Vitae</li>
+                <li>Academic transcripts and certificates</li>
+            </ul>
+        </div>
+
+        <p>I am applying <span class="flag">through the Palestinian Ministry of Higher Education as a nominated
+                candidate</span>. Would you be willing to consider serving as my potential supervisor and supporting my
+            application for a Pre-Admission Letter from Yanbian University?</p>
+
+        <p>Thank you for your time and consideration.</p>
+
+        <div class="signature">
+            <div class="applicant-name">Sincerely,<br>Zaher Shaat</div>
+            <div class="contact-info">
+                📧 Email: <a href="mailto:Zaher970597826287@gmail.com">Zaher970597826287@gmail.com</a><br>
+                📱 Phone/WhatsApp: <a href="https://wa.me/970597826287">+970 597 826 287</a><br>
+                🌐 Portfolio: <a href="https://zahershaat.github.io/"
+                    target="_blank">https://zahershaat.github.io/</a><br>
+                💼 GitHub: <a href="https://github.com/zaherShaat/" target="_blank">github.com/zaherShaat/</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>This email is sent as part of my application for the 2025 Chinese Government Scholarship Program</p>
+            <p>Palestinian Nominated Candidate • CSC Scholarship Category: Type A</p>
+        </div>
+    </div>
+</body>
+
+</html>
