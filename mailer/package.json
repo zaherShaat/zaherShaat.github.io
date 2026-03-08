@@ -1,0 +1,17 @@
+{
+  "name": "zaher-visitor-tracker",
+  "version": "1.0.0",
+  "description": "Visitor tracking server that sends email notifications",
+  "main": "send.js",
+  "type": "module",
+  "scripts": {
+    "start": "node send.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "nodemailer": "^6.9.16"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
