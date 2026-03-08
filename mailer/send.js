@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Email to receive notifications
-const NOTIFICATION_EMAIL = process.env.EMAIL_USER;
+// const NOTIFICATION_EMAIL = process.env.EMAIL_USER;
 
 async function sendVisitNotification(visitData) {
   try {
@@ -43,7 +43,7 @@ async function sendVisitNotification(visitData) {
 
     const info = await transporter.sendMail({
       from: `"Visitor Tracker" <${process.env.EMAIL_USER}>`,
-      to: NOTIFICATION_EMAIL,
+      to: process.env.NOTIFICATION_EMAIL,
       subject,
       html
     });
