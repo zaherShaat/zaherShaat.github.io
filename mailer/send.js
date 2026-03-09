@@ -1,10 +1,18 @@
 import dotenv from "dotenv";
-import fs from "fs";
 import nodemailer from "nodemailer";
-import path from "path";
 import http from "http";
 
 dotenv.config();
+
+// Startup validation — check that all required env vars are set
+const requiredVars = ['EMAIL_USER', 'EMAIL_PASS', 'NOTIFICATION_EMAIL'];
+for (const v of requiredVars) {
+  if (!process.env[v]) {
+    console.error(`⚠ Missing required env var: ${v}`);
+  } else {
+    console.log(`✔ ${v} is set`);
+  }
+}
 
 // SMTP configuration
 const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
@@ -26,7 +34,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Email to receive notifications
-// const NOTIFICATION_EMAIL = process.env.EMAIL_USER;
+const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL;
 
 async function sendVisitNotification(visitData) {
   try {
@@ -43,7 +51,7 @@ async function sendVisitNotification(visitData) {
 
     const info = await transporter.sendMail({
       from: `"Visitor Tracker" <${process.env.EMAIL_USER}>`,
-      to: process.env.NOTIFICATION_EMAIL,
+      to: NOTIFICATION_EMAIL,
       subject,
       html
     });

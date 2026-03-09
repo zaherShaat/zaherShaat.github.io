@@ -1,0 +1,9 @@
+# Environment variables (contains secrets)
+mailer/.env
+
+# Node.js dependencies
+mailer/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
