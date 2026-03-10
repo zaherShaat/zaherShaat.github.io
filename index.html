@@ -120,10 +120,16 @@
                     <a href="#projects">Projects</a>
                     <a href="#blogs">Blogs</a>
                 </div>
-                <div class="mobile-menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                <div class="nav-controls" style="display: flex; align-items: center; gap: 16px;">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"
+                        style="background: none; border: none; font-size: 1.25rem; color: var(--primary); cursor: pointer; transition: color 0.3s ease;">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -193,7 +199,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section" style="background-color: #f6f9fc;">
+    <section id="skills" class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="section-title">
                 <h2>My Skills</h2>
@@ -323,7 +329,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section" style="background-color: #f6f9fc;">
+    <section id="education" class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="section-title">
                 <h2>Education</h2>
@@ -465,7 +471,7 @@
         </div>
     </section>
     <!-- Medium Blogs Section -->
-    <section id="blogs" class="section" style="background-color: #f6f9fc;">
+    <section id="blogs" class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="section-title">
                 <h2>My Medium Blogs</h2>
@@ -542,6 +548,7 @@
     </footer>
 
     <!-- ── External Scripts (loaded at end of body for performance) ── -->
+    <script src="js/theme.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/tracker.js" defer></script>
 </body>
