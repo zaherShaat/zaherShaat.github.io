@@ -566,17 +566,16 @@ nav {
 
 /* --- Contact Section --- */
 .contact-simple {
-    background: var(--primary);
-    color: white;
+    background: var(--bg-secondary);
     padding: 80px 0;
 }
 
 .contact-simple .section-title h2 {
-    color: white;
+    color: var(--primary);
 }
 
 .contact-simple .section-title p {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-muted);
 }
 
 .contact-options {
@@ -604,6 +603,7 @@ nav {
 .contact-option.email {
     background: var(--bg-card);
     color: var(--primary);
+    border: 1px solid var(--border);
 }
 
 .contact-option:hover {
