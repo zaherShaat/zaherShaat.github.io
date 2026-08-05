@@ -23,10 +23,28 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// ── Header scroll shrink effect ─────────────────────────
-window.addEventListener('scroll', () => {
+// ── Header scroll shrink + active nav section ───────────
+const sectionNavLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+function updateNavOnScroll() {
     header.classList.toggle('scrolled', window.scrollY > 50);
-});
+
+    let currentId = '';
+    sectionNavLinks.forEach((link) => {
+        const id = link.getAttribute('href').slice(1);
+        const section = document.getElementById(id);
+        if (section && section.offsetTop - 120 <= window.scrollY) {
+            currentId = id;
+        }
+    });
+
+    sectionNavLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+    });
+}
+
+window.addEventListener('scroll', updateNavOnScroll, { passive: true });
+updateNavOnScroll();
 
 // ── Close menu on resize (desktop breakpoint) ───────────
 window.addEventListener('resize', () => {

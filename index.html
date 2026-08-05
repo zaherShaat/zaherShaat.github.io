@@ -120,9 +120,8 @@
                     <a href="#projects">Projects</a>
                     <a href="#blogs">Blogs</a>
                 </div>
-                <div class="nav-controls" style="display: flex; align-items: center; gap: 16px;">
-                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"
-                        style="background: none; border: none; font-size: 1.25rem; color: var(--primary); cursor: pointer; transition: color 0.3s ease;">
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">
                         <i class="fas fa-moon"></i>
                     </button>
                     <div class="mobile-menu-toggle">
@@ -138,16 +137,30 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
+            <p class="hero-badge"><span class="hero-badge-dot" aria-hidden="true"></span> Available for Flutter &amp; Node.js projects</p>
             <h1>Zaher Shaat</h1>
-            <h2>Mobile Apps Developer</h2>
+            <h2>
+                <span class="hero-stack">
+                    <span class="hero-stack-tag hero-stack-tag--flutter">Flutter</span>
+                    <span aria-hidden="true">&amp;</span>
+                    <span class="hero-stack-tag hero-stack-tag--node">Node.js</span>
+                    Developer
+                </span>
+            </h2>
             <p>Passionate Full Stack Flutter Developer from Gaza, Palestine with 2+ years of experience creating clean,
                 efficient mobile applications. Graduated in Technology of Mobile Apps and Network from Al-Aqsa
                 University.
             </p>
 
             <div class="tech-logos">
-                <img src="assets/images/flutter.svg" alt="Flutter" class="tech-logo">
-                <img src="assets/images/nodejs.svg" alt="Node.js" class="tech-logo">
+                <div class="tech-logo-wrap tech-logo-wrap--flutter">
+                    <img src="assets/images/flutter.svg" alt="Flutter" class="tech-logo">
+                    <span class="tech-logo-label">Flutter</span>
+                </div>
+                <div class="tech-logo-wrap tech-logo-wrap--node">
+                    <img src="assets/images/nodejs.svg" alt="Node.js" class="tech-logo">
+                    <span class="tech-logo-label">Node.js</span>
+                </div>
             </div>
 
             <div class="hero-btns">
@@ -199,67 +212,65 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+    <section id="skills" class="section section--alt">
         <div class="container">
             <div class="section-title">
                 <h2>My Skills</h2>
                 <p>Technologies and tools I work with on a daily basis</p>
             </div>
             <div class="skills-container">
-                <div class="skill-card">
-                    <img src="assets/images/flutter.svg" alt="Flutter" style="height: 50px; margin-bottom: 15px;">
+                <div class="skill-card skill-card--flutter">
+                    <img src="assets/images/flutter.svg" alt="Flutter" class="skill-logo">
                     <h3>Flutter</h3>
                     <p>2+ years experience building cross-platform mobile applications with clean architecture.</p>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/images/nodejs.svg" alt="Node.js" style="height: 50px; margin-bottom: 15px;">
+                <div class="skill-card skill-card--node">
+                    <img src="assets/images/nodejs.svg" alt="Node.js" class="skill-logo">
                     <h3>Node.js</h3>
                     <p>Building scalable backend services and APIs with Node.js and Express.</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-database" style="color: var(--accent);"></i>
+                    <i class="fas fa-database icon-node"></i>
                     <h3>MongoDB</h3>
                     <p>Designing and implementing NoSQL database solutions with MongoDB.</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-database" style="color: var(--accent);"></i>
+                    <i class="fas fa-fire icon-flutter"></i>
                     <h3>Firebase</h3>
                     <p>Full implementation for Firebase functions</p>
                 </div>
                 <div class="skill-card">
-                    <img src="assets/images/hive.png" alt="Hive DB" style="height: 50px; margin-bottom: 15px;">
+                    <img src="assets/images/hive.png" alt="Hive DB" class="skill-logo">
                     <h3>Hive</h3>
                     <p>The lightweight key-value database for Flutter</p>
                 </div>
                 <div class="skill-card">
-                    <img src="assets/images/jwt.png" alt="JWT logo" style="height: 50px; margin-bottom: 15px;">
+                    <img src="assets/images/jwt.png" alt="JWT logo" class="skill-logo">
                     <h3>JWT</h3>
                     <p>Implemented robust authentication systems using JWT.</p>
                 </div>
                 <div class="skill-card">
-                    <img src="assets/images/oauth.png" alt="OAuth"
-                        style="height: 80px; margin-bottom: 15px; width: 80px;">
+                    <img src="assets/images/oauth.png" alt="OAuth" class="skill-logo skill-logo--oauth">
                     <h3>OAuth</h3>
                     <p>Integrated OAuth 2.0 for secure third-party logins where needed.</p>
                 </div>
                 <div class="skill-card">
-                    <img src="assets/images/session.png" alt="Session Management"
-                        style="height: 80px; margin-bottom: 15px; width: 80px;">
+                    <img src="assets/images/session.png" alt="Session Management" class="skill-logo skill-logo--oauth">
                     <h3>Session Management</h3>
                     <p>Integrated Session Management 2.0 for secure third-party logins where needed.</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-code-branch" style="color: var(--accent);"></i>
+                    <i class="fas fa-code-branch icon-flutter"></i>
                     <h3>State Management</h3>
                     <p>Bloc, Provider, Riverpod for efficient state management in Flutter.</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-android" style="color: var(--accent);"></i>
+                    <i class="fab fa-android icon-flutter"></i>
                     <h3>Android</h3>
                     <p>Native Android development experience with Java.</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-git-alt" style="color: var(--accent);"></i>
+                    <i class="fab fa-git-alt icon-node"></i>
                     <h3>Git</h3>
                     <p>Version control and collaboration using Git and GitHub.</p>
                 </div>
@@ -274,6 +285,7 @@
                 <h2>Work Experience</h2>
                 <p>My professional journey in the tech industry</p>
             </div>
+            <div class="timeline">
             <div class="timeline-item left">
                 <div class="timeline-content">
                     <h3>Flutter Developer</h3>
@@ -325,11 +337,12 @@
                     <p>Develope a Flutter website for a graduation project called "Malabna"</p>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section" style="background-color: var(--bg-secondary);">
+    <section id="education" class="section section--alt">
         <div class="container">
             <div class="section-title">
                 <h2>Education</h2>
@@ -403,7 +416,7 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1Dnq2hHANvygMMzqXgeRMvfNYU73g557B?usp=drive_link"
-                                <a href="#" target="_blank" rel="noopener noreferrer">View Details</a>
+                                target="_blank" rel="noopener noreferrer">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -424,7 +437,7 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1KzXxmBhIZ7M6Ko18nhdoIFbMR-PvrSoz?usp=drive_link"
-                                <a href="#" target="_blank" rel="noopener noreferrer">View Details</a>
+                                target="_blank" rel="noopener noreferrer">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -441,7 +454,7 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1ErL235Me_s1ocMYOKF5sZufjYb2K_4II?usp=drive_link"
-                                <a href="#" target="_blank" rel="noopener noreferrer">View Details</a>
+                                target="_blank" rel="noopener noreferrer">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -459,19 +472,19 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://drive.google.com/drive/folders/1pTmwdju2B-7OGR_y0eHW8EB_0TZxsdVU?usp=drive_link"
-                                <a href="#" target="_blank" rel="noopener noreferrer">View Details</a>
+                                target="_blank" rel="noopener noreferrer">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 50px;">
+            <div class="section-cta">
                 <a href="https://drive.google.com/drive/u/1/folders/1hCsk4wh5rJvcPawHlECkTtmEh1R4SKaY?usp=drive_link"
                     class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Full Portfolio</a>
             </div>
         </div>
     </section>
     <!-- Medium Blogs Section -->
-    <section id="blogs" class="section" style="background-color: var(--bg-secondary);">
+    <section id="blogs" class="section section--alt">
         <div class="container">
             <div class="section-title">
                 <h2>My Medium Blogs</h2>
@@ -521,7 +534,7 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 40px;">
+            <div class="section-cta section-cta--blogs">
                 <a href="https://medium.com/@zaher970597826287" target="_blank" rel="noopener noreferrer"
                     class="btn btn-primary">View All
                     Blogs</a>
@@ -553,10 +566,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy;2026 Zaher Shaat.</p>
-            <p> All rights reserved.</p>
-            <p>Mobile Apps Developer</p>
-
+            <p>&copy;2026 Zaher Shaat. All rights reserved.</p>
+            <p class="footer-tagline">Flutter &amp; Node.js Developer</p>
         </div>
     </footer>
 
